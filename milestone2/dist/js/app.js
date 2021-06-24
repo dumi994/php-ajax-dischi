@@ -19,6 +19,7 @@ var app = new Vue({
 
     axios.get(this.url).then(function (response) {
       _this.dischi = response.data;
+      console.log(_this.dischi);
     });
   }
 });

@@ -12,7 +12,11 @@
     <div id="app">
         <div class="container">
             <div class="card" v-for="disc in dischi">
-                <h1>{{disc.author}}</h1>
+                <img :src="disc.poster" alt="">
+                <h1>{{disc.title}}</h1>
+                <span>{{disc.author}}</span>
+                <span>{{disc.genre}}</span>
+
             </div>
         </div>
     </div>

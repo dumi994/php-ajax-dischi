@@ -2,7 +2,7 @@ const app = new Vue({
     el: '#app',
     data: {
         dischi: [],
-       url: './api/dischi.php',
+        url: './api/dischi.php',
     },
     methods:{
         
@@ -11,6 +11,7 @@ const app = new Vue({
         axios.get(this.url)
         .then ((response)=>{
             this.dischi = response.data;
+            console.log(this.dischi);
         })
     }
 
