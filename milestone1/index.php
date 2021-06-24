@@ -14,22 +14,32 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="netflix.png" alt="">
+        </nav>
+    </header>
 
+    <main>  
+    <div class="container">
     <?php 
     foreach($discs as $disc){
         /* var_dump($disc); */
         ?>
-        <div class="container">
+        
+        
             <div class="card">
                 <img src="<?php echo $disc['poster']?>" alt="">
                 <h1><?php echo $disc['title']?></h1>
                 <span><?php echo $disc['author']?></span>
                 <span><?php echo $disc['year']?></span>
             </div>
-        </div>
+       
     <?php
     }
     ?>
+     </div>
+    </main>
     <!-- VUEJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- JS -->
