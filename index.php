@@ -15,11 +15,19 @@
 </head>
 <body>
 
-    
-    <h1>aaa</h1>
     <?php 
     foreach($discs as $disc){
-        var_dump($disc);
+        /* var_dump($disc); */
+        ?>
+        <div class="container">
+            <div class="card">
+                <img src="<?php echo $disc['poster']?>" alt="">
+                <h1><?php echo $disc['title']?></h1>
+                <span><?php echo $disc['author']?></span>
+                <span><?php echo $disc['year']?></span>
+            </div>
+        </div>
+    <?php
     }
     ?>
     <!-- VUEJS -->
